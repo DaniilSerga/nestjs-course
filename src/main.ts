@@ -10,7 +10,6 @@ const start = async () => {
         .setTitle('Advanced backend course')
         .setDescription('REST API Documentation')
         .setVersion('1.0.0')
-        .addTag('Supre')
         .build();
     
     const document = SwaggerModule.createDocument(app, config);
