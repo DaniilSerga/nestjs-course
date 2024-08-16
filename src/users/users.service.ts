@@ -10,7 +10,7 @@ export class UsersService {
 
     async createUser(dto: CreateUserDto) {
         const user = await this.userRepository.create(dto);
-        const role = await this.rolesService.getRoleByValue('USER');
+        const role = await this.rolesService.getRoleByValue('ADMIN');
 
         // Dynamically set a field value and save it at the same time
         await user.$set('roles', [role.id])
