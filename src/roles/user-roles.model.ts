@@ -1,7 +1,7 @@
 import { ApiProperty } from "@nestjs/swagger";
 import { Column, DataType, ForeignKey, Model, Table } from "sequelize-typescript";
-import { Role } from "./roles.model";
-import { User } from "src/users/users.model";
+import { Role } from "./entities/roles.model";
+import { User } from "src/users/entities/users.model";
  
 @Table({tableName: 'user_roles', createdAt: false, updatedAt: false})
 export class UserRoles extends Model<UserRoles> {
